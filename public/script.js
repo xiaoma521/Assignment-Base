@@ -4,7 +4,7 @@ async function windowActions(){
     const search = document.querySelector('search');
 
     const request = await fetch('/api')
-    const data = await request.jason();
+    const data = await request.json();
 
 
     form.addEventListener('submit', async(event) =>{
