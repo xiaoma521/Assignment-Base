@@ -7,6 +7,22 @@ async function windowActions(){
     .then((data) => data.json())
     .then((data2) => {
 
+     form.addEventListener('submit', async(event) =>{
+       event.preventDefault();
+       console.log('submit fired', search.value);
+        const display = data.filter((record) => record.search.toUpperCase() === search.value.toUpperCase());
+       
+       });
+       
+    search.addEventListener('input',(event)=>{
+       
+        console.log('input', event.target.value);
+       
+       
+       
+       
+       
+           });
     })
     .catch((err) => console.error(err));
 
@@ -14,22 +30,7 @@ async function windowActions(){
     const data = await request.json();
 
 
-    form.addEventListener('submit', async(event) =>{
-     event.preventDefault();
-     console.log('submit fired', search.value);
-     const display = data.filter((record) => record.search.toUpperCase() === search.value.toUpperCase());
-
-});
-
-    search.addEventListener('input',(event)=>{
-
-        console.log('input', event.target.value);
-
-
-
-
-
-    });
+   
 
 }
    
