@@ -2,6 +2,7 @@ async function windowActions(){
     console.log('window loaded');
     const form = document.querySelector('wrapper');
     const search = document.querySelector('search');
+    
 
     const request = await fetch('/api');
     const data = await request.json();
