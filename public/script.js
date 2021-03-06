@@ -15,21 +15,7 @@ async function windowActions(){
      })
     .then((data3) => {
 
-     form.addEventListener('submit', async(event) =>{
-       event.preventDefault();
-       console.log('submit fired', search.value);
-       
-       });
-       
-    search.addEventListener('input',(event)=>{
-       
-        console.log('input', event.target.value);
-       
-       
-       
-       
-       
-           });
+     
     })
     .catch((err) => console.error(err));
 
