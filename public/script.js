@@ -1,5 +1,4 @@
 
-
 async function windowActions() {
     console.log('window loaded');
   
@@ -27,6 +26,7 @@ async function windowActions() {
     search.addEventListener('input', (event) => {
 
         console.log('input', event.target.value);
+    
 
     });
 
