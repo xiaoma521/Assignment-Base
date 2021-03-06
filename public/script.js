@@ -3,6 +3,13 @@ async function windowActions(){
     const form = document.querySelector('wrapper');
     const search = document.querySelector('search');
 
+    fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json')
+    .then((data) => data.json())
+    .then((data2) => {
+
+    })
+    .catch((err) => console.error(err));
+
     const request = await fetch('/api')
     const data = await request.json();
 
