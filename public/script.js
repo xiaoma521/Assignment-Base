@@ -17,7 +17,7 @@ async function windowActions() {
     search.addEventListener('submit', async(event) =>{
     event.preventDefault();
     console.log('submit fired', search.value);
-    const filtered = data.filter((record) => record.searchs.toUpperCase() === search.value.toUpperCase());
+    const filtered = data.filter((record) => record.zip.toUpperCase() === search.value.toUpperCase());
        
     });
 
